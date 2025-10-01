@@ -1,7 +1,8 @@
-import React from 'react';
+
 import '../styles/MetodosPago_Xh.css';
 
-export default function MetodosPago_Xh() {
+
+export default function PaymentMethod_Xh() {
   return (
     <div className="metodos-container">
       <div className="metodos-header">
