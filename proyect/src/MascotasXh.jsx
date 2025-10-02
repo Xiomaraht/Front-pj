@@ -1,4 +1,4 @@
-import './styles/MascotasXh.css'
+import '../styles/MascotasXh.css'
 import CardsXh from './CardsXh'
 import MascotasMq from '../Data/MascotasMq.json'
 

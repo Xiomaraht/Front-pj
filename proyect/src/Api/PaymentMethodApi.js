@@ -1,17 +1,29 @@
-export const crearunMetodoNuevo = async () => {
-    try {
-        const result = await fetch ('http://localhost:8080/PaymentMethod',{
-            method: "POST",
-            headers: {"Content-Type":"application/JSON"},
-            body: JSON.stringify(data),
-            });
-            if(!result.ok) {
-                throw new Error ("Hubo un error al crear una nueva forma de pago")
-            }
-            return await result.json();    
-        }  catch (error) {
-                if(error.mensaje.include("Failed to fetch")|| error.message.include("NetworkError")){
-                    throw new Error("No se puede crear metodo de pago");
-                }
-            }
-};
+
+
+const STORAGE_KEY = "metodosPago";
+
+
+export async function obtenerMetodosPago() {
+  const data = localStorage.getItem(STORAGE_KEY);
+  return data ? JSON.parse(data) : [];
+}
+
+
+export async function crearUnMetodoNuevo(nuevo) {
+  const lista = await obtenerMetodosPago();
+  const creado = {
+    id: Date.now(), 
+    ...nuevo,
+  };
+  const actualizada = [...lista, creado];
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(actualizada));
+  return creado;
+}
+
+
+export async function eliminarMetodoPago(id) {
+  const lista = await obtenerMetodosPago();
+  const actualizada = lista.filter((m) => m.id !== id);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(actualizada));
+  return true;
+}

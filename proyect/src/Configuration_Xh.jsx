@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import CambiarContra_Xh from './CambiarContra_Xh';
-import './styles/Configuracion_Xh.css';
+import ChangePassword_Xh from '../Xiomara/CambiarContraseña/ChangePassword_Xh';
+import '../styles/Configuracion_Xh.css';
 
 export default function Configuracion_Xh() {
   const [mostrarCambio, setMostrarCambio] = useState(false);
@@ -19,7 +19,6 @@ export default function Configuracion_Xh() {
         <div className="config-form">
           <h2 className="config-title">Información Personal</h2>
 
-          {/* 📷 Imagen de perfil */}
           <div className="perfil-foto-section">
             <div className="perfil-foto-wrapper">
               {foto ? (
@@ -37,7 +36,6 @@ export default function Configuracion_Xh() {
             <p className="perfil-text">Haz clic para cambiar tu foto de perfil</p>
           </div>
 
-          {/* Campos */}
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="nombre">Nombre</label>
@@ -71,7 +69,6 @@ export default function Configuracion_Xh() {
             </div>
           </div>
 
-          {/* Botones */}
           <div className="btn-actions">
             <button 
               className="btn-cambiar" 
@@ -85,9 +82,11 @@ export default function Configuracion_Xh() {
           </div>
         </div>
       ) : (
-        <CambiarContra_Xh volver={() => setMostrarCambio(false)} />
+        <ChangePassword_Xh volver={() => setMostrarCambio(false)} />
       )}
     </div>
   );
 }
+
+
 

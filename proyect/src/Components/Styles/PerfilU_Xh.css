@@ -1,0 +1,56 @@
+.Perf_1Xh {
+  background: #fff;
+  padding: 1.5rem;
+  height: 500px;
+  width: 20vw;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-left: 20px;
+}
+
+.NomXh_1 {
+  text-align: center;
+}
+
+.CorreoXh_1 {
+  text-align: center;
+}
+
+
+
+.ImgXh_1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: #ddd;
+  margin: 0 auto 1rem;
+}
+
+.Menu_1 {
+  list-style: none;
+  padding: 0;
+}
+
+.Menu_1 li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  transition: background 0.2s;
+}
+
+.Menu_1 li:hover {
+  background: #f0f0f0;
+}
+
+.Menu_1 .active {
+  background-color: #0388A6;
+  color: white;
+}
+
+.cerrar-sesion {
+  color: #BF0436;
+  margin-top: 1rem;
+}
+

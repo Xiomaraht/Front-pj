@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './styles/CardsXh.css';
+import '../styles/CardsXh.css';
 
 export default function CardsXh({ mascota }) {
   return (

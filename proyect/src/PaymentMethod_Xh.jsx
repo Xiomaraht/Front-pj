@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import FormularioMetodoPago from "../Components/MetodoPago/FormPaymentMethod";
+import FormPaymentMethod from "../Xiomara/MetodoPago/FormPaymentMethod";
 import {
   obtenerMetodosPago,
   crearUnMetodoNuevo,
   eliminarMetodoPago,
-} from "../Api/PaymentMethodApi";
-import "../Styles/MetodosPago_Xh.css";
+} from "./api/PaymentMethodApi";
+import "../styles/MetodosPago_Xh.css";
 
 export default function PaymentMethod_Xh() {
   const [metodos, setMetodos] = useState([]);
@@ -38,17 +38,18 @@ export default function PaymentMethod_Xh() {
         </button>
       </div>
 
-      {mostrarForm && <FormularioMetodoPago onSubmit={handleCrear} />}
+      {mostrarForm && <FormPaymentMethod onSave={handleCrear} />}
 
       <div className="tarjetas-guardadas">
         {metodos.length === 0 && <p>No hay métodos guardados.</p>}
         {metodos.map((m) => (
           <div key={m.id} className="tarjeta">
             <div className="chip" />
-            <div className="numero">**** **** **** {m.ultimos4}</div>
+            <div className="numero">**** **** **** {m.numero.slice(-4)}</div>
             <div className="nombre">
               {m.nombre} {m.apellido}
             </div>
+            <div className="marca">{m.marca}</div>
             <button
               className="btn-eliminar"
               onClick={() => handleEliminar(m.id)}
@@ -61,5 +62,4 @@ export default function PaymentMethod_Xh() {
     </div>
   );
 }
-
 

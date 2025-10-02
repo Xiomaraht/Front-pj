@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/CambiarContra_Xh.css'
+import '../styles/CambiarContra_Xh.css'
 
 export default function CambiarContra({ volver }) {
   return (

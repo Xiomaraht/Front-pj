@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/HistorialPe_Xh.css';
+import '../styles/HistorialPe_Xh.css';
 
 export default function HistorialPe_Xh() {
   return (

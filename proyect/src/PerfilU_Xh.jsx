@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/PerfilU_Xh.css';
+import '../styles/PerfilU_Xh.css';
 
 export default function PerfilU({ seccionActiva, setSeccionActiva }) {
   const items = [

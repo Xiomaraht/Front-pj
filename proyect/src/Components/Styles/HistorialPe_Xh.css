@@ -1,0 +1,95 @@
+.Historial{
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  width: 145vh;
+}
+
+.pedido-card {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #fafafa;
+}
+
+.pedido-header {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entregado {
+  background-color: #e0f7e9;
+  color: #2e7d32;
+  padding: 5px 8px;
+  border-radius: 9px;
+  font-size: 12px;
+  
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.producto-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  border-radius: 6px;
+  padding: 0.5rem;
+  flex: 1;
+  min-width: 180px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.producto-img {
+  width: 60px;
+  height: 60px;
+  background: #ccc;
+  border-radius: 6px;
+}
+
+.producto-detalles p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.producto-detalles span {
+  font-size: 13px;
+  color: #555;
+}
+
+.pedido-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.pedido-footer button {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 6px 12px;
+  background: #0388A6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.pedido-productos{
+
+  font-family: 'Noto Sans';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
+}
+
+   

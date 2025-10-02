@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CambiarContra_Xh from './CambiarContra_Xh';
-import './styles/Configuracion_Xh.css';
+import '../styles/Configuracion_Xh.css';
 
 export default function Configuracion_Xh() {
   const [mostrarCambio, setMostrarCambio] = useState(false);

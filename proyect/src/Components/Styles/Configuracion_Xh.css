@@ -1,0 +1,119 @@
+/* Imagen de perfil */
+.perfil-foto-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.perfil-foto-wrapper {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #f4f4f4;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.perfil-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sin-foto {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+.input-foto {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.perfil-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+.configuracion-container {
+  padding: 25px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 140vh;
+  margin: 0 auto;
+}
+
+.config-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.btn-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-cambiar {
+  background: #BF0436;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-cambiar:hover {
+  background: #BF0436;
+}
+
+.btn-guardar {
+  background: #D9308D;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-guardar:hover {
+  background: #D9308D;
+}
